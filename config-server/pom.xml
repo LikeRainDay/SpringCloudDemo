@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>service-zuul</artifactId>
+	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>service-zuul</name>
+	<name>config-server</name>
 	<description>Demo project for Spring Boot</description>
 	<!-- 指定父pom -->
 	<parent>
@@ -17,7 +17,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,7 +29,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zuul</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 
 	</dependencies>
