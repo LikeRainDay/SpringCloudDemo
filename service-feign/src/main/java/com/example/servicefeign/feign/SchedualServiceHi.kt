@@ -1,12 +1,13 @@
 package com.example.servicefeign.feign
 
+import com.example.servicefeign.component.SchedualServiceHiHystric
 import org.springframework.cloud.netflix.feign.FeignClient
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RequestParam
 
 
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi",fallback = SchedualServiceHiHystric::class)
 interface SchedualServiceHi {
     // 这里的/hello 是你注册的Eureka中的生命接口
     @RequestMapping(value = ["/hello"], method = [(RequestMethod.GET)])

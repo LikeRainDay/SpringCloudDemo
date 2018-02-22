@@ -21,6 +21,8 @@
 	<modules>
 		<module>eureka_client</module>
 		<module>eureka_server</module>
+		<module>service-ribbon</module>
+		<module>service-feign</module>
 	</modules>
 
 
@@ -52,6 +54,11 @@
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
 			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

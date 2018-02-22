@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class HelloController {
+
+
     @Autowired
     private lateinit var helloService: HelloService
+
+
     @RequestMapping("/hi")
     fun hello(@RequestParam name: String): String {
         return helloService.helloService(name)
