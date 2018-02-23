@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class ConfigServerController {
-    @Value("\${hello}")
+
+
+    @Value("\${good}")
     private lateinit var  hello:String
 
     @RequestMapping("/hi")
